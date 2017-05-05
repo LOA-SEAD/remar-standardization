@@ -80,7 +80,11 @@
 									<pre class="language-css">
 										<code class="language-css">
 											.remar-orange {
-											  background-color: #FF5722 !important;
+											     background-color: #FF5722 !important;
+											}
+											
+											.remar-orange-text {
+											     color: #FF5722 !important;
 											}
 										</code>
 									</pre>
@@ -98,7 +102,11 @@
 									<pre class="language-css">
 										<code class="language-css">
 											.remar-red {
-											  background-color: #F70000 !important;
+											     background-color: #F70000 !important;
+											}
+											
+											.remar-red-text {
+											     color: #F70000 !important;
 											}
 										</code>
 									</pre>
@@ -116,7 +124,11 @@
 									<pre class="language-css">
 										<code class="language-css">
 											.remar-brown {
-											  background-color: #5D4037 !important;
+											     background-color: #5D4037 !important;
+											}
+											
+											.remar-brown-text {
+											     color: #5D4037 !important;
 											}
 										</code>
 									</pre>
@@ -134,7 +146,11 @@
 									<pre class="language-css">
 										<code class="language-css">
 											.remar-black {
-											  background-color: #212121 !important;
+											     background-color: #212121 !important;
+											}
+											
+											.remar-black-text {
+											     color: #212121 !important;
 											}
 										</code>
 									</pre>
@@ -152,7 +168,11 @@
 									<pre class="language-css">
 										<code class="language-css">
 											.remar-green {
-											  background-color: #4CAF50 !important;
+											     background-color: #4CAF50 !important;
+											}
+											
+											.remar-green-text {
+											     color: #4CAF50 !important;
 											}
 										</code>
 									</pre>
@@ -275,7 +295,7 @@
                                             }
 
                                             .remar-modal .modal-content h4 {
-                                              border-bottom: 1px solid #E0E0E0;
+                                                border-bottom: 1px solid #E0E0E0;
                                             }
 
                                             .remar-modal .modal-footer a {
@@ -295,7 +315,7 @@
                                         <code class="language-javascript">
                                             // O atributo "href" de um .modal-trigger deve especificar o ID do modal ao qual está ligado
                                             $(document).ready(function() {
-                                              $('.modal').modal();
+                                                $('.modal').modal();
                                             });
                                         </code>
                                     </pre>
@@ -324,15 +344,13 @@
 					<div class="card-panel--content">
 						<!-- Exemplos de campos de input -->
 						<div class="row">
-							<div clas="center-align">
-								<div class="required input-field col s6">
-									<input id="exemplo-input" class="remar-input remar-input--number validate" type="number">
-									<label for ="exemplo-input">
-										Digite um número
-										<span class="required-indicator">*</span>
-									</label>
-								</div>
-							</div>
+                            <div class="required input-field col s6">
+                                <input id="exemplo-input" class="remar-input remar-input--number validate" type="number">
+                                <label for="exemplo-input">
+                                    Digite um número
+                                    <span class="required-indicator">*</span>
+                                </label>
+                            </div>
 						</div>
 						<!-- Código -->
 						<!-- HTML -->
@@ -342,17 +360,15 @@
 									<h7>HTML</h7>
 									<pre class="language-markup">
 										<code class="language-markup">
-											&lt;div class="row"&gt;
-												&lt;div clas="center-align"&gt;
-													&lt;div class="required input-field col s6"&gt; &lt;!-- "required" apenas para campos obrigatórios --&gt;
-														&lt;input id="exemplo-input" class="remar-input remar-input--number validate" type="number"&gt;
-														&lt;label for ="exemplo-input"&gt;
-															Digite um número
-															&lt;span class="required-indicator">*&lt;/span> &lt;!-- apenas para campos obrigatórios --&gt;
-														&lt;/label&gt;
-													&lt;/div&gt;
-												&lt;/div&gt;
-											&lt;/div&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="required input-field col s6"&gt; &lt;!-- "required" apenas para campos obrigatórios --&gt;
+                                                &lt;input id="exemplo-input" class="remar-input validate" type="number"&gt;
+                                                &lt;label for="exemplo-input"&gt;
+                                                    Digite um número
+                                                    &lt;span class="required-indicator">*&lt;/span> &lt;!-- apenas para campos obrigatórios --&gt;
+                                                &lt;/label&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
 										</code>
 									</pre>
 								</section>
@@ -365,51 +381,45 @@
 									<h7>CSS</h7>
 									<pre class="language-css">
 										<code class="language-css">
-											.remar-input--number {
-											  color: #413c3c;
-											  -moz-appearance: textfield;
-											  -webkit-appearance: textfield;
-											  appearance: textfield;
-											}
+                                            .remar-input {
+                                                color: #413c3c;
+                                                border-bottom: 1px solid #717171 !important;
+                                            }
 
-											.remar-input {
-											  border-bottom: 1px solid #717171 !important;
-											}
+                                            .remar-input + label {
+                                                color: #717171 !important;
+                                            }
 
-											.remar-input + label {
-											  color: #717171 !important;
-											}
+                                            .remar-input:focus:not([readonly]) + label {
+                                                color: #5D4037 !important;
+                                            }
 
-											.remar-input:focus:not([readonly]) + label {
-											  color: #5D4037 !important;
-											}
+                                            .remar-input:focus {
+                                                border-bottom: 1px solid #5D4037 !important;
+                                                box-shadow: 0 1px 0 0 #5D4037 !important;
+                                            }
 
-											.remar-input:focus {
-											  border-bottom: 1px solid #5D4037 !important;
-											  box-shadow: 0 1px 0 0 #5D4037 !important;
-											}
+                                            .remar-input.valid + label {
+                                                color: #5D4037 !important;
+                                            }
 
-											.remar-input.valid + label {
-											  color: #5D4037 !important;
-											}
+                                            .remar-input.valid {
+                                                border-bottom: 1px solid #5D4037 !important;
+                                                box-shadow: 0 1px 0 0 #5D4037 !important;
+                                            }
 
-											.remar-input.valid {
-											  border-bottom: 1px solid #5D4037 !important;
-											  box-shadow: 0 1px 0 0 #5D4037 !important;
-											}
+                                            .remar-input.invalid + label {
+                                                color: #F70000 !important;
+                                            }
 
-											.remar-input.invalid + label {
-											  color: #F70000 !important;
-											}
+                                            .remar-input.invalid {
+                                                border-bottom: 1px solid #F70000 !important;
+                                                box-shadow: 0 1px 0 0 #F70000 !important;
+                                            }
 
-											.remar-input.invalid {
-											  border-bottom: 1px solid #F70000 !important;
-											  box-shadow: 0 1px 0 0 #F70000 !important;
-											}
-
-											label .required-indicator {
-												color: #F70000 !important;
-											}
+                                            label .required-indicator {
+                                                color: #F70000 !important;
+                                            }
 										</code>
 									</pre>
 								</section>
@@ -421,7 +431,7 @@
 					</div>
 				</div>
 
-				<!-- Painel de Entradas de Formulários -->
+				<!-- Painel de Campo de Seleção -->
 				<div id="panel--select" class="card-panel">
 					<div class="card-panel--header">
 						<span class="card-title valign-wrapper">
@@ -435,17 +445,20 @@
 					<div class="divider"></div>
 
 					<div class="card-panel--content">
-						<!-- Exemplos de campos de input -->
+						<!-- Exemplo de campo de Seleção -->
 						<div class="row">
-							<div clas="center-align">
-								<div class="required input-field col s6">
-									<input id="exemplo-input" class="remar-input remar-input--number validate" type="number">
-									<label for ="exemplo-input">
-										Digite um número
-										<span class="required-indicator">*</span>
-									</label>
-								</div>
-							</div>
+							<div class="input-field col s6">
+                                <select id="exemplo-select" class="validate">
+                                    <option value="" disabled selected>Escolha uma opção</option>
+                                    <option value="1">Opção 1</option>
+                                    <option value="2">Opção 2</option>
+                                    <option value="3">Opção 3</option>
+                                </select>
+                                <label for="exemplo-select">
+                                    Exemplo de Campo de Seleção
+                                    <span class="required-indicator">*</span>
+                                </label>
+                            </div>
 						</div>
 						<!-- Código -->
 						<!-- HTML -->
@@ -455,7 +468,20 @@
 									<h7>HTML</h7>
 									<pre class="language-markup">
 										<code class="language-markup">
-
+                                            &lt;div class="row"&gt;
+                                                &lt;div class="required input-field col s6"&gt; &lt;!-- "required" apenas para campos obrigatórios --&gt;
+                                                    &lt;select id="exemplo-select" class="validate"&gt;
+                                                        &lt;option value="" disabled selected>Escolha uma opção&lt;/option&gt;
+                                                        &lt;option value="1"&gt;Opção 1&lt;/option&gt;
+                                                        &lt;option value="2"&gt;Opção 2&lt;/option&gt;
+                                                        &lt;option value="3"&gt;Opção 3&lt;/option&gt;
+                                                    &lt;/select&gt;
+                                                    &lt;label for="exemplo-select"&gt;
+                                                        Exemplo de Campo de Seleção
+                                                        &lt;span class="required-indicator"&gt;*&lt;/span&gt; &lt;!-- apenas para campos obrigatórios --&gt;
+                                                    &lt;/label&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
 										</code>
 									</pre>
 								</section>
@@ -468,7 +494,24 @@
 									<h7>CSS</h7>
 									<pre class="language-css">
 										<code class="language-css">
-
+                                            .dropdown-content li span {
+                                                color: #5D4037;
+                                            }
+										</code>
+									</pre>
+								</section>
+							</div>
+						</div>
+						<!-- JavaScript -->
+						<div class="row">
+							<div class="col s12">
+								<section class="languague-javascript">
+									<h7>JavaScript</h7>
+									<pre class="language-javascript">
+										<code class="language-javascript">
+                                            $(document).ready(function() {
+                                                $('select').material_select();
+                                            });
 										</code>
 									</pre>
 								</section>
@@ -501,14 +544,29 @@
 			<h1>Dicas</h1>
 		</div>
 
-		<footer class="page-footer">
-			<div class="container">
-			</div>
-			<div class="footer-copyright">
-				<div class="container">
-				</div>
-			</div>
-		</footer>
+		<footer class="page-footer" xmlns="http://www.w3.org/1999/html">
+            <div class="container remar-max-size">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h6 class="white-text "><span>R</span>ecursos <span>E</span>ducacionais <span>M</span>ultiplataforma e <span>A</span>bertos na <span>R</span>ede. </h6>
+                        <p class="grey-text text-lighten-4">Para dúvidas, sugestões e criticas entre em contato conosco: <a href="mailto:remar@sead.ufscar.br" class="orange-text">remar@sead.ufscar.br</a>.</p>
+                    </div>
+                    <div class="col l4 offset-l2 hide-on-med-and-down">
+                        <ul>
+                            <li>
+                                <p align="right" class="grey-text text-lighten-4">O objetivo desta página é oferecer um modelo a ser seguido pelos desenvolvedores da plataforma REMAR a fim de padronizar toda a interface da ferramenta.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright ">
+                <div class="container remar-max-size">
+                    <div class="col s12">
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 		<!-- Scripts -->
 		<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
